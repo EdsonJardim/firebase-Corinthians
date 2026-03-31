@@ -2,15 +2,16 @@
 
 ## 📌 Descrição
 
-Aplicação web simples desenvolvida com Firebase Authentication, permitindo cadastro, login e gerenciamento de sessão de usuários.
+Aplicação web desenvolvida utilizando Firebase Authentication para cadastro, login e gerenciamento de sessão de usuários.
 
-O sistema altera dinamicamente a interface conforme o estado de autenticação, proporcionando uma experiência interativa e funcional.
+O sistema permite autenticação com email e senha, mantendo o usuário logado mesmo após recarregar a página, além de alterar dinamicamente a interface conforme o estado de autenticação.
 
 ---
 
 ## 🚀 Tecnologias Utilizadas
 
 * HTML5
+* CSS3
 * JavaScript (ES6)
 * Firebase Authentication
 
@@ -22,12 +23,12 @@ O sistema altera dinamicamente a interface conforme o estado de autenticação, 
 
 * Cadastro de usuário com email e senha
 * Login com validação
-* Tratamento de erros (email inválido, senha fraca, etc.)
+* Tratamento de erros (senha fraca, email inválido, etc.)
 
 ### 🔄 Sessão
 
 * Persistência de login com `onAuthStateChanged`
-* Usuário permanece logado após recarregar a página
+* Usuário permanece logado após atualizar a página
 
 ### 🎨 Interface Dinâmica
 
@@ -36,73 +37,95 @@ O sistema altera dinamicamente a interface conforme o estado de autenticação, 
 
 ### 🚪 Logout
 
-* Encerramento de sessão com um clique
+* Encerramento de sessão com botão de logout
 
 ### ⏳ Loading
 
-* Indicador visual durante:
-
-  * Login
-  * Cadastro
-  * Verificação de autenticação
+* Indicador de carregamento durante autenticação
 
 ---
 
 ## 📸 Prints da Aplicação
 
-### Tela de Login / Cadastro
+### 🔐 Tela de Login / Cadastro
 
 ![Tela de Login](./prints/login.png)
 
-### Usuário Logado
+### 👤 Usuário Logado
 
 ![Usuário Logado](./prints/logado.png)
 
 ---
 
-## 🔗 Deploy
+## ▶️ Como executar o projeto
 
-Acesse a aplicação online:
-👉 https://seu-site.vercel.app
-
----
-
-## 🛠️ Como executar o projeto
-
-1. Clone este repositório:
+### 1. Clone o repositório
 
 ```bash
 git clone https://github.com/seu-usuario/firebase-auth-app.git
 ```
 
-2. Abra o arquivo `index.html` no navegador
+### 2. Acesse a pasta
 
-3. Configure o Firebase:
+```bash
+cd firebase-auth-app
+```
 
-* Crie um projeto no Firebase
-* Ative Authentication (Email/Senha)
-* Substitua o objeto `firebaseConfig` no arquivo `app.js`
+### 3. Execute o projeto
+
+```bash
+npx serve
+```
+
+### 4. Abra no navegador
+
+```
+http://localhost:3000
+```
+
+---
+
+## 🔥 Configuração do Firebase
+
+1. Acesse o Firebase Console
+2. Crie um projeto
+3. Ative **Authentication**
+4. Habilite **Email e Senha**
+5. Copie a configuração e cole no `app.js`
+
+---
+
+## 📁 Estrutura do Projeto
+
+```
+firebase-auth-app/
+├── index.html
+├── style.css
+├── app.js
+├── README.md
+└── prints/
+    ├── login.png
+    └── logado.png
+```
 
 ---
 
 ## 📚 Aprendizados
 
-Este projeto demonstra na prática:
-
 * Integração com Firebase Authentication
+* Manipulação de DOM com JavaScript
 * Gerenciamento de estado de autenticação
-* Manipulação de DOM com JavaScript puro
 * Boas práticas de UX (loading e feedback)
 
 ---
 
 ## 👨‍💻 Autor
 
-Desenvolvido por você 🚀
+Edson Eduardo 🚀
 
 ---
 
 ## 📌 Observação
 
-Este projeto tem fins educacionais e foi desenvolvido como atividade prática para aprendizado de autenticação com Firebase.
+Projeto desenvolvido para fins educacionais como atividade prática de autenticação com Firebase.
 
