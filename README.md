@@ -1,97 +1,45 @@
-# 🔐 Firebase Corinthians
+# 🔐 Firebase-Corinthians
 
 ## 📌 Descrição
 
-Aplicação web desenvolvida utilizando Firebase Authentication para cadastro, login e gerenciamento de sessão de usuários.
+Aplicação web desenvolvida com Firebase Authentication que permite cadastro, login e gerenciamento de sessão de usuários.
 
-O sistema permite autenticação com email e senha, mantendo o usuário logado mesmo após recarregar a página, além de alterar dinamicamente a interface conforme o estado de autenticação.
+O projeto foi estilizado no **modo Corinthians ⚫⚪**, com interface moderna, responsiva e experiência de usuário aprimorada (UX), incluindo loading animado e layout centralizado.
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+## 🚀 Tecnologias utilizadas
 
 * HTML5
 * CSS3
-* JavaScript (ES6)
+* JavaScript (ES Modules)
 * Firebase Authentication
 
 ---
 
 ## ⚙️ Funcionalidades
 
-### 🔑 Autenticação
-
-* Cadastro de usuário com email e senha
-* Login com validação
-* Tratamento de erros (senha fraca, email inválido, etc.)
-
-### 🔄 Sessão
-
-* Persistência de login com `onAuthStateChanged`
-* Usuário permanece logado após atualizar a página
-
-### 🎨 Interface Dinâmica
-
-* Tela de login/cadastro quando não autenticado
-* Exibição do email do usuário quando autenticado
-
-### 🚪 Logout
-
-* Encerramento de sessão com botão de logout
-
-### ⏳ Loading
-
-* Indicador de carregamento durante autenticação
+* ✅ Cadastro de usuário (email e senha)
+* ✅ Login de usuário
+* ✅ Persistência de sessão (usuário continua logado)
+* ✅ Logout
+* ✅ Interface dinâmica (muda conforme login)
+* ✅ Loading animado (spinner)
+* ✅ Tratamento de erros (ex: senha fraca, email inválido)
+* ✅ Layout responsivo
+* ✅ Tema personalizado (modo Corinthians ⚫⚪)
 
 ---
 
-## 📸 Prints da Aplicação
+## 🖥️ Interface
 
-### 🔐 Tela de Login / Cadastro
+### 🔑 Tela de Login / Cadastro
 
-![Tela de Login](./prints/login.png)
+![Tela de Login](prints/login.png)
 
 ### 👤 Usuário Logado
 
-![Usuário Logado](./prints/logado.png)
-
----
-
-## ▶️ Como executar o projeto
-
-### 1. Clone o repositório
-
-```bash
-git clone https://github.com/seu-usuario/firebase-Corinthians.git
-```
-
-### 2. Acesse a pasta
-
-```bash
-cd firebase-Corinthians
-```
-
-### 3. Execute o projeto
-
-```bash
-npx serve
-```
-
-### 4. Abra no navegador
-
-```
-http://localhost:3000
-```
-
----
-
-## 🔥 Configuração do Firebase
-
-1. Acesse o Firebase Console
-2. Crie um projeto
-3. Ative **Authentication**
-4. Habilite **Email e Senha**
-5. Copie a configuração e cole no `app.js`
+![Usuário Logado](prints/logado.png)
 
 ---
 
@@ -99,33 +47,81 @@ http://localhost:3000
 
 ```
 firebase-Corinthians/
+│
 ├── index.html
 ├── style.css
 ├── app.js
-├── README.md
 └── prints/
     ├── login.png
-    └── logado.png
+    ├── logado.png
+    └── logo.png
 ```
 
 ---
 
-## 📚 Aprendizados
+## 🔥 Como executar o projeto
 
-* Integração com Firebase Authentication
-* Manipulação de DOM com JavaScript
-* Gerenciamento de estado de autenticação
-* Boas práticas de UX (loading e feedback)
+1. Clone o repositório:
+
+```
+git clone https://github.com/seu-usuario/firebase-Corinthians.git
+```
+
+2. Acesse a pasta:
+
+```
+cd firebase-Corinthians
+```
+
+3. Execute com um servidor local:
+
+```
+npx serve
+```
+
+4. Abra no navegador:
+
+```
+http://localhost:3000
+```
+
+---
+
+## 🔐 Configuração do Firebase
+
+O projeto utiliza Firebase Authentication com login via email e senha.
+
+Para funcionar corretamente:
+
+* Criar um projeto no Firebase
+* Ativar Authentication
+* Habilitar login com email/senha
+* Inserir suas credenciais no arquivo `app.js`
+
+---
+
+## 📸 Prints da Aplicação
+
+Os prints estão disponíveis na pasta `prints/`:
+
+* Tela de login
+* Tela de usuário logado
+
+---
+
+## 🔗 Deploy
+
+(Adicione aqui o link caso publique no Vercel ou Netlify)
 
 ---
 
 ## 👨‍💻 Autor
 
-Edson Eduardo 🚀
+Projeto desenvolvido por **Edson Eduardo Soares Jardim** 🚀
 
 ---
 
-## 📌 Observação
+## 🏁 Status do Projeto
 
-Projeto desenvolvido para fins educacionais como atividade prática de autenticação com Firebase.
+✅ Concluído
 
