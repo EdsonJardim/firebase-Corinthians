@@ -1,63 +1,106 @@
-<!DOCTYPE html>
+# 🔐 Firebase Authentication App
 
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
+## 📌 Descrição
 
-  <!-- Responsividade -->
+Aplicação web simples desenvolvida com Firebase Authentication, permitindo cadastro, login e gerenciamento de sessão de usuários.
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+O sistema altera dinamicamente a interface conforme o estado de autenticação, proporcionando uma experiência interativa e funcional.
 
-  <title>Firebase Auth</title>
+---
 
-  <!-- CSS -->
+## 🚀 Tecnologias Utilizadas
 
-  <link rel="stylesheet" href="style.css">
-</head>
+* HTML5
+* JavaScript (ES6)
+* Firebase Authentication
 
-<body>
+---
 
-  <h2>🔐 Firebase Authentication</h2>
+## ⚙️ Funcionalidades
 
-  <!-- Loading -->
+### 🔑 Autenticação
 
-  <div id="loading">
-    <p>Carregando...</p>
-  </div>
+* Cadastro de usuário com email e senha
+* Login com validação
+* Tratamento de erros (email inválido, senha fraca, etc.)
 
-  <!-- Login / Cadastro -->
+### 🔄 Sessão
 
-  <div id="auth-container" class="hidden">
+* Persistência de login com `onAuthStateChanged`
+* Usuário permanece logado após recarregar a página
 
-<h3>Login</h3>
-<input type="email" id="loginEmail" placeholder="Email">
-<input type="password" id="loginPassword" placeholder="Senha">
-<button onclick="login()">Entrar</button>
+### 🎨 Interface Dinâmica
 
-<hr>
+* Tela de login/cadastro quando não autenticado
+* Exibição do email do usuário quando autenticado
 
-<h3>Cadastro</h3>
-<input type="email" id="registerEmail" placeholder="Email">
-<input type="password" id="registerPassword" placeholder="Senha">
-<button onclick="register()">Cadastrar</button>
+### 🚪 Logout
+
+* Encerramento de sessão com um clique
+
+### ⏳ Loading
+
+* Indicador visual durante:
+
+  * Login
+  * Cadastro
+  * Verificação de autenticação
+
+---
+
+## 📸 Prints da Aplicação
+
+### Tela de Login / Cadastro
+
+![Tela de Login](./prints/login.png)
+
+### Usuário Logado
+
+![Usuário Logado](./prints/logado.png)
+
+---
+
+## 🔗 Deploy
+
+Acesse a aplicação online:
+👉 https://seu-site.vercel.app
+
+---
+
+## 🛠️ Como executar o projeto
+
+1. Clone este repositório:
+
+```bash
+git clone https://github.com/seu-usuario/firebase-auth-app.git
 ```
 
-  </div>
+2. Abra o arquivo `index.html` no navegador
 
-  <!-- Usuário logado -->
+3. Configure o Firebase:
 
-  <div id="user-container" class="hidden">
-    <h3>Usuário logado:</h3>
-    <p id="userEmail"></p>
-    <button onclick="logout()">Sair</button>
-  </div>
+* Crie um projeto no Firebase
+* Ative Authentication (Email/Senha)
+* Substitua o objeto `firebaseConfig` no arquivo `app.js`
 
-  <!-- JS -->
+---
 
-  <script type="module" src="app.js"></script>
+## 📚 Aprendizados
 
-</body>
-</html>
+Este projeto demonstra na prática:
+
+* Integração com Firebase Authentication
+* Gerenciamento de estado de autenticação
+* Manipulação de DOM com JavaScript puro
+* Boas práticas de UX (loading e feedback)
+
+---
+
+## 👨‍💻 Autor
+
+Desenvolvido por você 🚀
+
+---
 
 ## 📌 Observação
 
