@@ -1,4 +1,4 @@
-# 🔐 Firebase Authentication App
+# 🔐 Firebase Corinthians
 
 ## 📌 Descrição
 
@@ -62,13 +62,13 @@ O sistema permite autenticação com email e senha, mantendo o usuário logado m
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/firebase-auth-app.git
+git clone https://github.com/seu-usuario/firebase-Corinthians.git
 ```
 
 ### 2. Acesse a pasta
 
 ```bash
-cd firebase-auth-app
+cd firebase-Corinthians
 ```
 
 ### 3. Execute o projeto
@@ -98,7 +98,7 @@ http://localhost:3000
 ## 📁 Estrutura do Projeto
 
 ```
-firebase-auth-app/
+firebase-Corinthians/
 ├── index.html
 ├── style.css
 ├── app.js
