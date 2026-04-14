@@ -1,128 +1,16 @@
-# 🔐 Firebase-Corinthians
+# React + Vite
 
-## 📌 Descrição
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Aplicação web desenvolvida com Firebase Authentication que permite cadastro, login e gerenciamento de sessão de usuários.
+Currently, two official plugins are available:
 
-O projeto foi estilizado no **modo Corinthians ⚫⚪**, com interface moderna, responsiva e experiência de usuário aprimorada (UX), incluindo loading animado e layout centralizado.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
----
+## React Compiler
 
-## 🚀 Tecnologias utilizadas
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-* HTML5
-* CSS3
-* JavaScript (ES Modules)
-* Firebase Authentication
+## Expanding the ESLint configuration
 
----
-
-## ⚙️ Funcionalidades
-
-* ✅ Cadastro de usuário (email e senha)
-* ✅ Login de usuário
-* ✅ Persistência de sessão (usuário continua logado)
-* ✅ Logout
-* ✅ Interface dinâmica (muda conforme login)
-* ✅ Loading animado (spinner)
-* ✅ Tratamento de erros (ex: senha fraca, email inválido)
-* ✅ Layout responsivo
-* ✅ Tema personalizado (modo Corinthians ⚫⚪)
-
----
-
-## 🖥️ Interface
-
-### 🔑 Tela de Login / Cadastro
-
-![Tela de Login](prints/login.png)
-
-### 👤 Usuário Logado
-
-![Usuário Logado](prints/logado.png)
-
----
-
-## 📁 Estrutura do Projeto
-
-```
-firebase-Corinthians/
-│
-├── index.html
-├── style.css
-├── app.js
-└── prints/
-    ├── login.png
-    ├── logado.png
-    └── logo.png
-```
-
----
-
-## 🔥 Como executar o projeto
-
-1. Clone o repositório:
-
-```
-git clone https://github.com/seu-usuario/firebase-Corinthians.git
-```
-
-2. Acesse a pasta:
-
-```
-cd firebase-Corinthians
-```
-
-3. Execute com um servidor local:
-
-```
-npx serve
-```
-
-4. Abra no navegador:
-
-```
-http://localhost:3000
-```
-
----
-
-## 🔐 Configuração do Firebase
-
-O projeto utiliza Firebase Authentication com login via email e senha.
-
-Para funcionar corretamente:
-
-* Criar um projeto no Firebase
-* Ativar Authentication
-* Habilitar login com email/senha
-* Inserir suas credenciais no arquivo `app.js`
-
----
-
-## 📸 Prints da Aplicação
-
-Os prints estão disponíveis na pasta `prints/`:
-
-* Tela de login
-* Tela de usuário logado
-
----
-
-## 🔗 Deploy
-
-(Adicione aqui o link caso publique no Vercel ou Netlify)
-
----
-
-## 👨‍💻 Autor
-
-Projeto desenvolvido por **Edson Eduardo Soares Jardim** 🚀
-
----
-
-## 🏁 Status do Projeto
-
-✅ Concluído
-
-
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
